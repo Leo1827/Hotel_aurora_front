@@ -1,0 +1,26 @@
+.cardProduct {
+
+    .card-border {
+        background-color: #F6F6F6;
+        box-shadow: 2px 4px 8px -3px rgba(0, 0, 0, 0.45);
+        height: 170px;
+        width: 267px;
+    }
+
+    .card-title {
+        color: #00AA96;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .card-text {
+        color: #00AA96;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .card-img-top {
+        height: 130px;
+    }
+}

@@ -1,0 +1,37 @@
+.packageHotel{
+    .card-package{
+        border-radius: 15px;
+        background-color: #F6F6F6;
+
+        .title-package{
+            font-size: 1.3em;
+            font-weight: 650;
+        }
+
+        .text-price{
+            color: #00AA96;
+            font-size: .8em;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .text-description{
+            font-size: .7em;
+            word-spacing: 0;
+            line-height: 1.1;
+        }
+
+        
+
+    }
+
+    .card-package:hover{
+        box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+    }
+    
+    .text-tarjet{
+        font-size: .7em;
+        background-color: #00AA96;
+        border-radius: 1px 1px 5px 0px;
+    }
+}

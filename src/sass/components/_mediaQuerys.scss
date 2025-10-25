@@ -1,0 +1,716 @@
+//pantalla para moviles
+@media screen and (max-width: 767px) {
+    
+    //cart pages
+    .section-cart-phone{
+        display: inline !important;
+    }
+
+    //cart
+    .cartProduct{
+        .container-cart-row{
+            display: inline !important;
+        }
+    }
+
+    //cart product details
+    .cartProductVerify{
+        .container-cart-phone{
+            margin: 0 !important;
+
+            .container-tablet-cart{
+                display: inline !important;
+    
+                .container-data{
+                    padding-left: 0 !important;
+                    padding: 0 !important;
+                    width: 110%;
+
+                    .text-title-cart{
+                        font-size: 1.1em !important;
+                    }
+                }
+    
+                .form-container{
+                    width: 100% !important;
+
+                    .direction-top-cart{
+                        position: absolute !important;
+                        padding-left: 20rem !important;
+                        margin-top: 5px !important;
+                    }
+
+                    .btn-data{
+                        width: 100% !important;
+                    }
+    
+                    .next-pas-phone{
+                        display: flex !important;
+                        justify-content: center !important;
+    
+                        .btn-confirm{
+                            margin: 0 !important;
+                            position: relative !important;
+                        }
+                    }
+                }                
+
+                .cart-cvc{
+                    .btn-data{
+                        width: 100px !important;
+                    }
+                }
+                
+    
+                .container-info-cart{
+                    margin: 0 !important;
+                    width: 300px !important;
+                }
+
+                .container-buy-phone{
+                    margin: 0 !important;
+                    padding-bottom: 20px !important;
+
+                    .btn-buy{
+                        width: 100px !important;
+                    }
+                }
+            }
+
+            .ellipse-container-medium{
+                display: none !important;
+            }
+        }
+        
+    }
+
+    //landing
+    .container-packajetour-medium{
+        display: inline !important;
+
+        //Seccion ordenar por 
+        .filter-cardproduct-phone{
+            display: flex !important;
+            justify-content: center !important;
+            padding-right: 3rem !important;
+            margin-top: 3rem !important;
+        }
+
+        .title-landing-phone-product{
+            display: flex;
+            justify-content: center;
+        }
+
+
+    }
+
+    //Packaje hotel
+    .packageHotel{
+        .card-package{
+            display: inline !important;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+            width: 100%;
+
+            .carousel-tablet{
+                width: 100% !important;
+                .img-packaje{
+                    width: 100% !important;
+                }
+
+                .carousel-container-tablet{
+                    border-radius: 10px 10px 0px 0px !important;
+                }
+            }
+
+            .title-package{
+                font-size: 1.6em;
+                font-weight: 650;
+            }
+    
+            .text-price{
+                display: none;
+            }
+    
+            .text-description{
+                font-size: .7em;
+                word-spacing: 0;
+                line-height: 1.1;
+            }
+
+            .btn-medium{
+                margin-top: 0 !important;
+                margin-bottom: 1rem !important;
+            }
+    
+        }
+
+        .card-package:hover{
+            box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+        }
+
+        .favorite-packaje{
+            display: none;
+        }
+        
+        .text-tarjet{
+            display: none !important;
+        }
+    }
+
+    //Card producto
+    .cardProduct{
+
+
+        .card-border{
+            height: 190px;
+            .card-img-top{
+                height: 400px !important;
+            }
+
+            .card-title{
+                color: #00AA96;
+                font-size: .8em;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .title-product-medium{
+                width: 90px !important;
+            }
+            
+            .price-product-medium{
+                width: 59px !important;
+
+                .card-text{
+                    color: #00AA96;
+                    font-size: .8em;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        
+    }
+
+    //Home
+    .container-card-img{
+        width: 100% !important;
+        display: inline-block !important;
+    }
+
+    //Seccion Publicity
+    .cardPublicity{
+        .container-publicity{
+            height: 240px !important;
+            width: 100%;
+        }
+    }
+
+    //Home, carousel
+    .myCarousel{
+        .arrow-carousel-phone{
+            width: 20px;
+        }
+        .margin-img-carousel{
+            height: 400px !important;
+        }
+        .container-carousel{
+            .row-carousel{
+                display: inline-block !important;
+            }
+            .btn-carousel{
+                font-size: 1em;
+                width: 100% !important;
+            }
+            .package-carousel{
+                margin-top: 10rem !important;
+                width: 250px !important;
+            }
+        }
+        
+    }
+
+    //Home about
+    .about{
+        margin: 0 !important;
+        .container-phonea-bout{
+            padding: 0% !important;
+
+            .container-about{
+                padding: 0 !important;
+                display: inline !important;
+    
+                .video-about{
+                    width: 100% !important;
+                }
+            }
+        }
+        
+
+        .content-about{
+            margin-top: 1rem !important;
+            width: 95% !important;
+        }
+    }
+
+    //ImgCard
+    .imgCard {
+        display: flex !important;
+        width: 90% !important;
+    }
+
+    //card payment
+    .container-payment{
+        display: flex !important;
+        justify-content: center !important;
+        height: 450px !important;
+        width: 90% !important;
+
+        .svg-payment{
+            margin-left: 11rem !important;
+            width: 100px !important;
+        }
+
+        .img-oxxo{
+            position: inherit;
+        }
+    }
+
+}
+
+//pantalla para tablet
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    //cart pages
+    .section-cart-phone{
+        display: inline !important;
+    }
+
+    //main
+    .btns-session{
+        width: 100%;
+    }
+    .select-main-phone{
+        width: 85% !important;
+    }
+
+    //cart product details
+    .cartProductVerify{
+        .container-tablet-cart{
+            display: inline !important;
+
+            .container-info-cart{
+                margin: 0 !important;
+                width: 550px !important;
+
+                .text-packaje-cart{
+                    margin: 0 !important;
+                    padding: 20px !important;
+                    width: 100% !important;
+                }
+            }
+
+            .container-data{
+                padding: 3rem;
+                width: 100%;
+            }
+
+            .form-container{
+                width: 100% !important;
+
+                .btn-data{
+                    width: 100% !important;
+                }
+
+                .next-pas-phone{
+                    display: flex !important;
+                    justify-content: center !important;
+
+                    .btn-confirm{
+                        margin: 0 !important;
+                        position: relative !important;
+                    }
+                }
+
+                
+            }
+
+            //Ellipse
+        .ellipse-container-medium{
+            display: none !important;
+        }
+
+        }
+    }
+
+    //landing
+    .container-packajetour-medium{
+        .container-tablet{
+            width: 180px !important;
+            margin: 0 !important;
+
+            .card-destination{
+                width: 150px;
+            }
+        }
+    }
+
+    //Packaje hotel
+    .packageHotel{
+        .card-package{
+            display: inline !important;
+            border-radius: 10px;
+            background-color: #F6F6F6;
+            width: 300px;
+
+            .carousel-tablet{
+                width: 300px !important;
+                .img-packaje{
+                    width: 300px !important;
+                }
+
+                .carousel-container-tablet{
+                    border-radius: 10px 10px 0px 0px !important;
+                }
+            }
+
+            .title-package{
+                font-size: 1.6em;
+                font-weight: 650;
+            }
+    
+            .text-price{
+                display: none;
+            }
+    
+            .text-description{
+                font-size: .7em;
+                word-spacing: 0;
+                line-height: 1.1;
+            }
+
+            .btn-medium{
+                margin-top: 0 !important;
+                margin-bottom: 1rem !important;
+            }
+    
+        }
+
+        .card-package:hover{
+            box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+        }
+
+        .favorite-packaje{
+            display: none;
+        }
+        
+        .text-tarjet{
+            display: none !important;
+        }
+    }
+
+    //Card producto
+    .cardProduct{
+        .card-border{
+            height: 190px;
+            .card-img-top{
+                height: 400px !important;
+            }
+
+            .card-title{
+                color: #00AA96;
+                font-size: .8em;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .title-product-medium{
+                width: 90px !important;
+            }
+            
+            .price-product-medium{
+                width: 59px !important;
+
+                .card-text{
+                    color: #00AA96;
+                    font-size: .8em;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        
+    }
+
+    //Home, carousel
+    .myCarousel{
+        .container-carousel{
+            .package-carousel{
+                margin-top: 10rem !important;
+                width: 300px !important;
+            }
+        }
+        
+    }
+
+    //Home
+    .container-card-img{
+        width: 100% !important;
+        display: inline-block !important;
+    }
+
+    //ImgCard
+    .imgCard {
+        display: flex !important;
+        margin-left: 20% !important;
+        width: 60% !important;
+    }
+
+    //Home about
+    .about{
+        .container-about{
+            padding: 0 !important;
+            margin-right: 13rem !important;
+            display: inline !important;
+        }
+
+        .content-about{
+            margin-top: 1rem !important;
+            width: 95% !important;
+        }
+    }
+
+
+}
+
+//pantallas de media resolucion
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+    //Home about
+    .about{
+        .container-about{
+            padding: 0 !important;
+            margin-right: 13rem !important;
+            display: inline !important;
+        }
+
+        .content-about{
+            margin-top: 1rem !important;
+            width: 95% !important;
+        }
+    }
+
+    //Home, carousel
+    .myCarousel{
+        .container-carousel{
+            .package-carousel{
+                position: relative;
+                left: 45rem !important;
+                height: 100vh;
+                
+                .container-text{
+                    margin-top: 16rem;
+                }
+            }
+        }
+        
+    }
+
+    //cart verify
+    .cartProductVerify{
+
+        .hv-cart-buy{
+            height: 0 !important;
+        }
+
+        .btn-data{
+            width: 75% !important;
+        }
+
+        .form-container{
+            display: none;
+        }
+
+        .container-info-cart{
+            width: 500px !important;
+        }
+
+        .text-packaje-cart{
+            margin-top: 10px !important;
+            width: 400px !important;
+        }
+        .container-buy-phone {
+            margin-left: 0 !important;
+        }
+
+        .btn-buy{
+            width: 50% !important;
+        }
+
+        .buy-container-medium{
+            margin: 0 !important;
+        }
+
+        .container-packaje{
+            margin: 0 !important;
+        }
+
+        .ellipse-container{
+            display: none !important;
+        }
+
+        //Ellipse
+        .ellipse-container-medium {
+            width: 90%;
+            height: 50px;
+            margin: 10px !important;
+            position: relative;
+
+            .ellipse {
+                width: 90%;
+                height: 3px;
+                border-radius: 25px / 50%;
+                background-color: #ccc;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 10px;
+            }
+        
+            .dot {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #00AA96;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+            .dot-start {
+                left: 0%;
+                display: flex !important;
+    
+                .data1{
+                    position: absolute;
+                    margin-top: 15px;
+                }
+            }
+            
+            .dot-middle {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #ffffff;
+                border: 1px solid #00AA96;
+    
+                .data2{
+                    position: absolute;
+                    margin-top: 10px;
+                }
+            }
+            
+            .dot-end {
+                right: 0%;
+                background-color: #fff;
+                border: 1px solid #C4C4C4;
+    
+                .data3{
+                    position: absolute !important;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    //Destinos Landing
+    .container-packajetour-medium{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    //Packaje hotel
+    .packageHotel{
+        .card-package{
+            border-radius: 10px;
+            background-color: #F6F6F6;
+    
+            .title-package{
+                font-size: 1.6em;
+                font-weight: 650;
+            }
+    
+            .text-price{
+                display: none;
+            }
+    
+            .text-description{
+                font-size: .7em;
+                word-spacing: 0;
+                line-height: 1.1;
+            }
+    
+        }
+
+        .card-package:hover{
+            box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+        }
+
+        .favorite-packaje{
+            display: none;
+        }
+        
+        .text-tarjet{
+            display: none !important;
+        }
+    }
+
+    //Card producto
+    .cardProduct{
+        .card-border{
+            height: 220px;
+            .card-img-top{
+                height: 400px !important;
+            }
+
+            .card-title{
+                color: #00AA96;
+                font-size: .8em;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .title-product-medium{
+                width: 90px !important;
+            }
+            
+            .price-product-medium{
+                width: 59px !important;
+
+                .card-text{
+                    color: #00AA96;
+                    font-size: .8em;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    //cart verify
+    .ellipse-container-medium{
+        display: none !important;
+    }
+
+    .packageHotel{
+        .card-package{
+            .btn-medium{
+                display: none;
+            }
+        }   
+    }
+}

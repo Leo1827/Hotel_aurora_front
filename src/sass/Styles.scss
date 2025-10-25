@@ -1,0 +1,29 @@
+
+//Components
+
+@import './components/menu';
+@import './components/footer';
+@import './components/about';
+@import './components/input';
+@import './components/myCarousel';
+@import './components/packageHotel';
+@import './components/cardProduct';
+@import './components/imgCard';
+@import './components/cardPublicity';
+@import './components/cardPayment';
+@import './components/cartProduct';
+@import './components/cartProductVerify';
+@import './pages/storeProducts';
+@import './pages/showProduct';
+@import './pages/tourStore';
+
+// pages
+@import './pages/home';
+@import './pages/registercollaborator';
+
+
+//Estas lineas  siempre van al final
+@import './variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './global';
+@import './components/mediaQuerys';
