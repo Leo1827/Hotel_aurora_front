@@ -1,8 +1,8 @@
 import React from "react"
 import AppRoter from "./router/AppRoter"
-const  XimenaApp = ()=> {
+const  AuroraApp = ()=> {
 
   return (<AppRoter/>)
 }
 
-export default XimenaApp
+export default AuroraApp
