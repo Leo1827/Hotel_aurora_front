@@ -7,11 +7,11 @@ const MyCarousel = () => {
                 <Carousel.Item>
                     <img
                         src="./Images/defaulthotel.png"
-                        className="d-block w-100 margin-img-carousel"
+                        className="d-block w-100"
                         alt="First slide"
                     />
-                    <Carousel.Caption className="top-50 start-50 w-100 translate-middle container-carousel">
-                        <div className="package-carousel w-25 ">
+                    <Carousel.Caption className="top-50 start-50 w-100 translate-middle h-100">
+                        <div className="package-carousel w-25">
                             <h1 className="d-flex row-carousel">HARD ROCK</h1>
                             <span className="d-flex row-carousel">
                                 Puerto Vallarta - 2 noches y 3 días
