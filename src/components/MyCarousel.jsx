@@ -13,7 +13,7 @@ const MyCarousel = () => {
                     <Carousel.Caption className="top-50 start-50 w-100 translate-middle h-100">
                         <div className="package-carousel w-25">
                             <h1 className="d-flex row-carousel">HARD ROCK</h1>
-                            <span className="d-flex row-carousel">
+                            <span className="d-flex">
                                 Puerto Vallarta - 2 noches y 3 días
                             </span>
                             <span className="d-flex row-carousel">
@@ -48,7 +48,7 @@ const MyCarousel = () => {
 
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 margin-img-carousel"
+                        className="d-block w-100"
                         src="./Images/island.png"
                         alt="Second slide"
                     />
