@@ -54,7 +54,7 @@ const Home = () => {
                 <About />
             </div>
 
-            <div className="mt-5 d-flex justify-content-center container-card-img">
+            <div className="mt-5 md:mx-8 d-flex justify-content-center container-card-img">
                 <ImgCard imgSrc="./Images/land.png" title="Playa del carmen" />
 
                 <ImgCard imgSrc="./Images/water.png" title="Los cenotes" />
