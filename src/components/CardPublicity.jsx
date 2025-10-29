@@ -2,17 +2,13 @@ import React from 'react'
 
 const CardPublicity = () => {
   return (
-    <div className='cardPublicity my-3 container'>
-        <div className="container-fluid container-publicity">
-            <div className="row">
-
-                <div className='my-5 py-5 text-center text-white'>
-                    <h1>ESPACIO PUBLICITARIO</h1>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    <section className="w-full bg-[#00AA96] flex items-center justify-center text-white py-20 my-6 rounded-none">
+      <div className="text-center px-4">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-wide">
+          ESPACIO PUBLICITARIO
+        </h1>
+      </div>
+    </section>
   )
 }
 
