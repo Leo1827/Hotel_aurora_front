@@ -66,7 +66,7 @@ const Home = () => {
                 <CardPublicity />
             </div>
 
-            <div className="d-flex justify-content-center d-md-block d-none">
+            <div className="d-flex justify-content-center">
                 <CardPayment />
             </div>
         </>
