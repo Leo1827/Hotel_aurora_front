@@ -1,39 +1,44 @@
 import React from 'react'
 
 const About = () => {
-    return (
-        <div className='about mx-5'>
-            <div className="px-5 container-phonea-bout">
-                <div className="d-flex mx-5 px-5 container-about">
+  return (
+    <section className="mx-4 md:px-32 md:mx-10 my-10">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-12">
 
-                    <div className="mx-3">
-                        <video controls className='video-about w-100'>
-                            <source src="./Videos/video.mp4" type="video/mp4" />
-                            Tu navegador no soporta el elemento video.
-                        </video>
-                    </div>
-
-                    <div className="col-md-4 content-about mx-3" style={{height:"320px"}}>
-                        <div className="start-0 " style={{height:"320px"}}>
-                            <h3 className='m-2 title-about'>Acerca de nosotros</h3>
-                            <p className='m-2' style={{fontSize: ".8em"}}>
-                                Ximena es una agencia de viajes que ofrece una amplia gama de servicios turísticos a precios accesibles.
-                                Con un enfoque en proporcionar un excelente servicio, XImena ha ganado una reputación por su atención al cliente 
-                                y por ayudar a sus clientes a planificar sus viajes de manera eficiente y sin estrés.
-                            </p>
-                            <p className='m-2' style={{fontSize: ".8em"}}>
-                                Con Ximena, los clientes pueden elegir entre algunos de los destinos más populares, como Cancún, Playa del Carmen,
-                                Cozumel y Puerto Vallarta. Cada destino cuenta con una amplia gama de opciones de alojamiento y actividades para que los clientes
-                                puedan personalizar su viaje según sus preferencias y presupuesto. Además, el equipo de Ximena está disponible en todo momento para brindar 
-                                asesoramiento y ayuda en caso de cualquier necesidad durante el viaje.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        {/* Video */}
+        <div className="w-full md:w-1/2">
+          <video
+            controls
+            className="w-full rounded-[15px] shadow-lg"
+          >
+            <source src="./Videos/video.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento video.
+          </video>
         </div>
-    )
+
+        {/* Contenido */}
+        <div className="w-full md:w-1/2 h-auto md:h-[320px] overflow-y-auto">
+          <h3 className="text-[#00AA96] text-2xl font-semibold mb-3">
+            Acerca de nosotros
+          </h3>
+          <p className="text-sm leading-relaxed text-gray-700 mb-3">
+            El <span className="font-semibold">Hotel Aurora</span> es un espacio diseñado para ofrecer confort, elegancia
+            y tranquilidad a cada uno de nuestros huéspedes. Nos especializamos
+            en brindar experiencias únicas, donde la atención al detalle y la
+            calidad del servicio son nuestra prioridad.
+          </p>
+          <p className="text-sm leading-relaxed text-gray-700">
+            Ubicado en un entorno privilegiado, Aurora combina la hospitalidad
+            tradicional con un toque moderno. Contamos con habitaciones
+            totalmente equipadas, restaurante gourmet, zonas de descanso y un
+            personal siempre dispuesto a hacer de tu estadía una experiencia
+            inolvidable. Ya sea por turismo o negocios, el Hotel Aurora es el
+            lugar ideal para disfrutar, relajarse y conectar con lo esencial.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default About
