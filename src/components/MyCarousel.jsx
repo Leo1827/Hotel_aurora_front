@@ -3,20 +3,20 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/Images/defaulthotel.png",
-    title: "HARD ROCK",
-    subtitle: "Puerto Vallarta - 2 noches y 3 días",
+    image: "https://images.pexels.com/photos/1559699/pexels-photo-1559699.jpeg",
+    title: "PLAYA BLANCA",
+    subtitle: "Santa marta - 2 noches y 3 días",
     available: "Disponible: Mayo - Junio - Julio",
-    price: "$11,200 MXN",
+    price: "$800.000 COP",
     note: "Ciertas condiciones aplican**",
   },
   {
-    image: "/Images/island.png",
+    image: "https://images.pexels.com/photos/2884864/pexels-photo-2884864.jpeg",
     title: "Second slide label",
     subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    image: "/Images/city.png",
+    image: "https://images.pexels.com/photos/8264573/pexels-photo-8264573.jpeg",
     title: "Third slide label",
     subtitle: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
   },
@@ -39,36 +39,37 @@ const MyCarousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden h-[90vh]">
-      {/* Slides */}
+    <div className="relative w-full h-[90vh] overflow-hidden ">
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             index === current ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
-          <img
-            src={slide.image}
-            alt={slide.title}
-            className="w-full h-full object-cover"
-          />
+          {/* Contenedor centrado para uniformar tamaño */}
+          <div className="flex items-center justify-center w-full h-full bg-black">
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
+
+          {/* Gradiente superior */}
+          <div className="absolute top-0 left-0 w-full h-[25%] bg-gradient-to-t from-transparent to-white" />
 
           {/* Gradiente inferior */}
           <div className="absolute bottom-0 left-0 w-full h-[25%] bg-gradient-to-b from-transparent to-white" />
 
-          {/* Contenido principal (manteniendo tu estilo) */}
+          {/* Contenido */}
           <div className="absolute top-1/3 right-20 transform -translate-y-1/2 text-right w-[550px]">
             {index === 0 ? (
               <div className="md:text-left sm:text-center md:ml-32 bg-black/50 p-5 rounded-xl">
-                <h1 className="text-5xl font-bold text-gray-100">
-                  {slide.title}
-                </h1>
+                <h1 className="text-5xl font-bold text-gray-100">{slide.title}</h1>
                 <p className="text-gray-100">{slide.subtitle}</p>
                 <p className="text-gray-100">{slide.available}</p>
-                <p className="font-bold text-[2.5em] text-gray-100 mt-1">
-                  {slide.price}
-                </p>
+                <p className="font-bold text-[2.5em] text-gray-100 mt-1">{slide.price}</p>
                 <p className="text-gray-100">{slide.note}</p>
                 <button className="mt-6 w-[300px] bg-[#00AA96] text-white py-2 rounded hover:bg-[#009681] transition text-[1.8em] font-bold">
                   Cotizar
