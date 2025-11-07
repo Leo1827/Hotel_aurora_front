@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 import { useMapping } from '../hooks/useMapping'
 import { getProductsService } from '../services/productService'
+import ProductCarousel from "../components/ProductCarousel";
 
 const Home = () => {
     const products = useMapping(getProductsService, [])
@@ -62,9 +63,14 @@ const Home = () => {
                 <ImgCard imgSrc="./Images/mx.png" title="Chichen-Itza" />
             </div>
 
-            <div className="py-5 publicity-phone">
+            <div className="">
                 <CardPublicity />
             </div>
+
+            <div>
+                <ProductCarousel />
+            </div>
+
 
             <div className="d-flex justify-content-center">
                 <CardPayment />

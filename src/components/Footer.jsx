@@ -42,10 +42,10 @@ const Footer = () => {
               <Phone className="w-4 h-4" /> +52 123 456 7890
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="w-4 h-4" /> contacto@aurora.com
+              <Mail className="w-4 h-4" /> mileerdubanleon@gmail.com
             </li>
             <li className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" /> Ciudad de México, MX
+              <MapPin className="w-4 h-4" /> Ibagué Tolima
             </li>
           </ul>
         </div>
