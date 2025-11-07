@@ -1,7 +1,7 @@
 export const formatMexicanCurrency = (number) => {
-    const formatter = new Intl.NumberFormat('es-MX', {
+    const formatter = new Intl.NumberFormat('es-CO', {
         style: 'currency',
-        currency: 'MXN',
+        currency: 'COP',
         minimumFractionDigits: 0,
     })
     return formatter.format(number)

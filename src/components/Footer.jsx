@@ -1,192 +1,88 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
-    return (
-        <footer className="footer mt-5">
-            <div className="container-fluid">
-                <div className="row ">
-                    <div className="col-md-9 order-sm-1">
-                        <div className="row gap-5 m-5 pt-5 text-white">
-                            {/* Destinos */}
-                            <div className="col-md-1">
-                                <h6 className="text-uppercase fw-bold mb-4">
-                                    Destinos
-                                </h6>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        jalisco
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Michoacán
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Yucatan
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Nuevo Leon
-                                    </a>
-                                </p>
-                            </div>
+  return (
+    <footer className="bg-[#f1f1f1] text-[#00AA96] pt-12 pb-6">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        {/* Aurora Logo & Descripción */}
+        <div>
+          <h2 className="text-3xl font-bold mb-3">Aurora</h2>
+          <p className="text-sm leading-relaxed">
+            Aurora es una plataforma de experiencias únicas de viaje. Conecta con destinos inolvidables y vive aventuras diseñadas para ti.
+          </p>
+        </div>
 
-                            {/* Paquetes */}
-                            <div className="col-md-2">
-                                <h6 className="text-uppercase fw-bold mb-4">
-                                    Paquetes
-                                </h6>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Hoteles
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Actividades
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Spa
-                                    </a>
-                                </p>
-                            </div>
+        {/* Destinos */}
+        <div>
+          <h4 className="font-semibold text-lg mb-3">Destinos</h4>
+          <ul className="space-y-2 text-gray-300">
+            <li><a href="#!" className="hover:text-white transition">Cali</a></li>
+            <li><a href="#!" className="hover:text-white transition">Bogota</a></li>
+            <li><a href="#!" className="hover:text-white transition">Medellín</a></li>
+            <li><a href="#!" className="hover:text-white transition">Tolima</a></li>
+          </ul>
+        </div>
 
-                            {/* Tiendas */}
-                            <div className="col-md-2">
-                                <h6 className="text-uppercase fw-bold mb-4">
-                                    Tienda
-                                </h6>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Toallas
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Protector Solar
-                                    </a>
-                                </p>
-                                <p>
-                                    <a href="#!" className="text-reset">
-                                        Tomatodo
-                                    </a>
-                                </p>
-                            </div>
+        {/* Tienda */}
+        <div>
+          <h4 className="font-semibold text-lg mb-3">Tienda</h4>
+          <ul className="space-y-2 text-gray-300">
+            <li><a href="#!" className="hover:text-white transition">Toallas</a></li>
+            <li><a href="#!" className="hover:text-white transition">Protector Solar</a></li>
+            <li><a href="#!" className="hover:text-white transition">Accesorios</a></li>
+          </ul>
+        </div>
 
-                            {/* Redes */}
-                            <div className="col-md-2">
-                                <div className="row">
-                                    <h6 className="text-uppercase fw-bold mb-4">
-                                        Redes sociales
-                                    </h6>
-                                    <p className="">
-                                        {/* <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6262 0.513672C5.05569 0.513672 3.54951 1.13755 2.43899 2.24807C1.32847 3.35859 0.70459 4.86477 0.70459 6.43528L0.70459 14.3308C0.70459 15.9013 1.32847 17.4074 2.43899 18.518C3.54951 19.6285 5.05569 20.2524 6.6262 20.2524H14.5217C16.0922 20.2524 17.5984 19.6285 18.7089 18.518C19.8194 17.4074 20.4433 15.9013 20.4433 14.3308V6.43528C20.4433 4.86477 19.8194 3.35859 18.7089 2.24807C17.5984 1.13755 16.0922 0.513672 14.5217 0.513672L6.6262 0.513672ZM5.96824 10.383C5.96824 9.16151 6.45348 7.99004 7.31722 7.1263C8.18095 6.26256 9.35243 5.77732 10.5739 5.77732C11.7954 5.77732 12.9669 6.26256 13.8307 7.1263C14.6944 7.99004 15.1796 9.16151 15.1796 10.383C15.1796 11.6045 14.6944 12.776 13.8307 13.6397C12.9669 14.5035 11.7954 14.9887 10.5739 14.9887C9.35243 14.9887 8.18095 14.5035 7.31722 13.6397C6.45348 12.776 5.96824 11.6045 5.96824 10.383ZM15.1796 5.77732H16.4955V4.46141H15.1796V5.77732Z" fill="white" />
-                                            </svg> */}
-                                        <a
-                                            href="#!"
-                                            className="text-reset mx-1"
-                                        >
-                                            @ximenatravel
-                                        </a>
-                                    </p>
-                                    <p className="">
-                                        {/* <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.4928 10.232C20.4928 4.77044 16.0602 0.337891 10.5987 0.337891C5.13714 0.337891 0.70459 4.77044 0.70459 10.232C0.70459 15.0207 4.10815 19.008 8.61985 19.9282V13.2002H6.64104V10.232H8.61985V7.75845C8.61985 5.84889 10.1732 4.29552 12.0828 4.29552H14.5563V7.26375H12.5775C12.0333 7.26375 11.5881 7.70898 11.5881 8.25316V10.232H14.5563V13.2002H11.5881V20.0766C16.5846 19.5819 20.4928 15.367 20.4928 10.232Z" fill="white" />
-                                            </svg> */}
-                                        <a
-                                            href="#!"
-                                            className="text-reset mx-1"
-                                        >
-                                            ximenatravel
-                                        </a>
-                                    </p>
-                                    <p className="">
-                                        {/* <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.08351 19.9418C17.2509 19.9418 22.2658 12.3459 22.2658 5.77019C22.2658 5.55763 22.2658 5.34204 22.2567 5.12948C23.233 4.4227 24.0756 3.54766 24.7451 2.54537C23.8331 2.94748 22.8666 3.21251 21.8771 3.33183C22.9194 2.70879 23.7001 1.72848 24.074 0.573119C23.0947 1.15329 22.0229 1.56057 20.9054 1.77712C20.1541 0.977018 19.16 0.446977 18.077 0.269095C16.9939 0.0912132 15.8825 0.275417 14.9148 0.793175C13.947 1.31093 13.177 2.13335 12.7241 3.13303C12.2711 4.13271 12.1604 5.25387 12.4091 6.32285C10.4273 6.22348 8.48861 5.70865 6.71864 4.81177C4.94867 3.91488 3.38699 2.65596 2.13489 1.11666C1.49925 2.21451 1.30526 3.51312 1.59233 4.74879C1.87939 5.98447 2.62599 7.06457 3.6805 7.76977C2.8903 7.74292 2.11746 7.53073 1.42434 7.15031V7.21863C1.4257 8.3687 1.82411 9.48302 2.55223 10.3733C3.28034 11.2635 4.2935 11.875 5.42045 12.1045C4.99269 12.2223 4.55082 12.281 4.10714 12.2791C3.79435 12.28 3.48218 12.251 3.17491 12.1925C3.49343 13.1825 4.11362 14.0481 4.94864 14.668C5.78365 15.288 6.79166 15.6312 7.83148 15.6496C6.06504 17.037 3.88304 17.7895 1.6369 17.7859C1.24111 17.7875 0.845603 17.7647 0.452637 17.7175C2.73236 19.1709 5.37991 19.9426 8.08351 19.9418Z" fill="white" />
-                                            </svg> */}
-                                        <a
-                                            href="#!"
-                                            className="text-reset mx-1"
-                                        >
-                                            @ximenatravel
-                                        </a>
-                                    </p>
-                                    <p className="">
-                                        {/* <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.6433 3.14904C12.8937 2.29328 12.4806 1.19428 12.481 0.0566406H9.09247V13.6544C9.06634 14.3902 8.75568 15.0872 8.22591 15.5986C7.69614 16.11 6.9886 16.3958 6.2523 16.3959C4.69513 16.3959 3.40115 15.1238 3.40115 13.5447C3.40115 11.6586 5.2215 10.244 7.09667 10.8252V7.35996C3.31342 6.85552 0.00170898 9.7944 0.00170898 13.5447C0.00170898 17.1964 3.02831 19.7953 6.24133 19.7953C9.68464 19.7953 12.481 16.999 12.481 13.5447V6.64717C13.855 7.63394 15.5047 8.16337 17.1963 8.16047V4.772C17.1963 4.772 15.1347 4.87069 13.6433 3.14904Z" fill="white" />
-                                            </svg> */}
-                                        <a
-                                            href="#!"
-                                            className="text-reset mx-1"
-                                        >
-                                            @ximenatravel
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+        {/* Contacto */}
+        <div>
+          <h4 className="font-semibold text-lg mb-3">Contacto</h4>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-2">
+              <Phone className="w-4 h-4" /> +52 123 456 7890
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail className="w-4 h-4" /> contacto@aurora.com
+            </li>
+            <li className="flex items-center gap-2">
+              <MapPin className="w-4 h-4" /> Ciudad de México, MX
+            </li>
+          </ul>
+        </div>
+      </div>
 
-                            {/* Contacto */}
-                            <div className="col-md-2">
-                                <div className="mx-3">
-                                    <h6 className="text-uppercase fw-bold mb-4">
-                                        Contacto
-                                    </h6>
-                                    <p>
-                                        {/* <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.2793 0.289065C6.49596 0.289065 3.06263 1.7724 0.520964 4.18073C0.370964 4.33073 0.279297 4.53907 0.279297 4.7724C0.279297 5.00573 0.370964 5.21407 0.520964 5.36407L2.58763 7.43073C2.74372 7.58507 2.95393 7.67232 3.17344 7.67387C3.39294 7.67543 3.60437 7.59117 3.76263 7.43906C4.42096 6.8224 5.17096 6.30573 5.9793 5.8974C6.2543 5.76406 6.44596 5.48073 6.44596 5.1474V2.56407C7.6543 2.16407 8.93763 1.95573 10.2793 1.95573C11.6043 1.95573 12.896 2.16407 14.1043 2.55573V5.13906C14.1043 5.46407 14.296 5.75573 14.571 5.88907C15.3876 6.2974 16.1126 6.8224 16.796 7.43073C16.946 7.58073 17.1543 7.66406 17.3626 7.66406C17.6126 7.66406 17.821 7.5724 17.971 7.4224L20.0376 5.35573C20.1876 5.20573 20.2793 4.9974 20.2793 4.76407C20.2793 4.53073 20.1793 4.33073 20.0293 4.18073C17.3992 1.6802 13.9083 0.286818 10.2793 0.289065ZM7.7793 3.6224V6.1224C7.7793 6.1224 2.7793 10.2891 2.7793 12.7891V16.1224H17.7793V12.7891C17.7793 10.2891 12.7793 6.1224 12.7793 6.1224V3.6224H11.1126V5.28907H9.44596V3.6224H7.7793ZM10.2793 7.78906C11.1634 7.78906 12.0112 8.14025 12.6363 8.76538C13.2614 9.3905 13.6126 10.2383 13.6126 11.1224C13.6126 12.0065 13.2614 12.8543 12.6363 13.4794C12.0112 14.1045 11.1634 14.4557 10.2793 14.4557C9.39524 14.4557 8.54739 14.1045 7.92227 13.4794C7.29715 12.8543 6.94596 12.0065 6.94596 11.1224C6.94596 10.2383 7.29715 9.3905 7.92227 8.76538C8.54739 8.14025 9.39524 7.78906 10.2793 7.78906ZM10.2793 9.03906C9.72676 9.03906 9.19686 9.25856 8.80616 9.64926C8.41546 10.04 8.19596 10.5699 8.19596 11.1224C8.19596 11.6749 8.41546 12.2048 8.80616 12.5955C9.19686 12.9862 9.72676 13.2057 10.2793 13.2057C10.8318 13.2057 11.3617 12.9862 11.7524 12.5955C12.1431 12.2048 12.3626 11.6749 12.3626 11.1224C12.3626 10.5699 12.1431 10.04 11.7524 9.64926C11.3617 9.25856 10.8318 9.03906 10.2793 9.03906Z" fill="white" />
-                                            </svg> */}
-                                        <a href="#!" className="text-reset">
-                                            1234-5678
-                                        </a>
-                                    </p>
-                                    <p>
-                                        <svg
-                                            width="23"
-                                            height="19"
-                                            viewBox="0 0 23 19"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            {/* <path d="M3.71802 1.27344H19.718C20.818 1.27344 21.718 2.17344 21.718 3.27344V15.2734C21.718 16.3734 20.818 17.2734 19.718 17.2734H3.71802C2.61802 17.2734 1.71802 16.3734 1.71802 15.2734V3.27344C1.71802 2.17344 2.61802 1.27344 3.71802 1.27344Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M21.718 1.27344L11.718 8.27344L1.71802 1.27344" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg> */}
-                                        </svg>
+      {/* Divider */}
+      <div className="border-t border-gray-600 mt-10 mb-5 w-11/12 mx-auto"></div>
 
-                                        <a href="#!" className="text-reset">
-                                            Contacto@ximenatravel.com
-                                        </a>
-                                    </p>
-                                    <p>
-                                        <a href="#!" className="text-reset">
-                                            1234-5678
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3 pb-5 d-flex justify-content-center align-items-center order-sm-1">
-                        <Link
-                            to={'register-colaborator'}
-                            className="btn btn-success"
-                            style={{
-                                height: '40px',
-                            }}
-                        >
-                            Convierte en un agente de viajes
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    )
-}
+      {/* Parte inferior */}
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm">
+        <p className="mb-3 md:mb-0">© {new Date().getFullYear()} Aurora. Todos los derechos reservados.</p>
 
-export default Footer
+        {/* Redes Sociales */}
+        <div className="flex gap-4">
+          <a href="#!" className="hover:text-[#4ab0ff] transition">
+            <Facebook className="w-5 h-5" />
+          </a>
+          <a href="#!" className="hover:text-[#4ab0ff] transition">
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a href="#!" className="hover:text-[#4ab0ff] transition">
+            <Twitter className="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+
+      {/* Botón especial */}
+      <div className="mt-8 flex justify-center">
+        <Link
+          to="/register-colaborator"
+          className="bg-[#00AA96] hover:bg-[#00AA78] text-white px-6 py-3 rounded-xl font-semibold transition"
+        >
+          Conviértete en agente de viajes
+        </Link>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
