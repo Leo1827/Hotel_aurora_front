@@ -8,7 +8,7 @@ const Landing = () => {
     return (
         <div className="container-fluid">
             <div className="my-5 py-3">
-                <div className="d-flex container-packajetour-medium gap-3 mx-5">
+                <div className="d-flex container-packajetour-medium gap-3 mt-10 mx-5">
                     <div className="col-md-7 col-lg-6 order-md-1">
                         <div
                             className=" d-flex justify-content-sm-end me-sm-none justify-content-md-end me-md-5"
