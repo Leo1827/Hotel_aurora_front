@@ -5,245 +5,100 @@ import { getProductsService } from '../services/productService'
 
 const Landing = () => {
     const products = useMapping(getProductsService, [])
+
     return (
-        <div className="container-fluid">
-            <div className="my-5 py-3">
-                <div className="d-flex container-packajetour-medium gap-3 mt-10 mx-5">
-                    <div className="col-md-7 col-lg-6 order-md-1">
-                        <div
-                            className=" d-flex justify-content-sm-end me-sm-none justify-content-md-end me-md-5"
-                            style={{ marginLeft: '80px' }}
-                        >
-                            <span className=" mt-2 mx-2">Ordenar por</span>
-                            <select
-                                className="form-select"
-                                aria-label="Default select example"
-                                style={{ width: '150px' }}
-                            >
-                                <option value="1">Más relevante</option>
-                            </select>
+        <div className="w-full px-4 md:px-10 lg:px-20 py-10">
+            <div className="grid grid-cols-1 mt-14 md:grid-cols-4 gap-10">
+
+                {/* --- COLUMNA IZQUIERDA (Destinos / Filtros) --- */}
+                <div className="md:col-span-1 bg-gray-100 p-5 rounded-xl shadow-sm">
+                    <p className="text-xs text-gray-500">
+                        Destinos {'>'} Paquetes turísticos
+                    </p>
+                    <h2 className="text-2xl font-bold mt-2">Destinos</h2>
+                    <span className="text-gray-600 text-sm">30 resultados</span>
+
+                    {/* Tarjeta de filtros */}
+                    <div className="mt-5 space-y-6">
+                        {/* Pasajes */}
+                        <div>
+                            <p className="font-semibold text-lg text-gray-900 mb-2">
+                                Pasajes
+                            </p>
+                            <ul className="space-y-1 text-emerald-600 text-sm">
+                                <li><a href="#" className="hover:underline">No incluye pasaje (30)</a></li>
+                                <li><a href="#" className="hover:underline">Incluye pasaje (20)</a></li>
+                            </ul>
                         </div>
 
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <PackageHotel />
-
-                        <div className="container w-75 my-5">
-                            <div className="d-flex justify-content-end">
-                                <a
-                                    href="#"
-                                    style={{
-                                        fontSize: '1.7em',
-                                        fontWeight: '500',
-                                    }}
-                                >
-                                    Ver mas
-                                </a>
-                            </div>
+                        {/* Otros destinos */}
+                        <div>
+                            <p className="font-semibold text-lg text-gray-900 mb-2">
+                                Otros destinos
+                            </p>
+                            <ul className="space-y-1 text-emerald-600 text-sm">
+                                <li><a href="#" className="hover:underline">Distrito capital (1)</a></li>
+                                <li><a href="#" className="hover:underline">Nayarit (2)</a></li>
+                                <li><a href="#" className="hover:underline">Oaxaca (3)</a></li>
+                                <li><a href="#" className="hover:underline">Mazatlán (5)</a></li>
+                                <li><a href="#" className="hover:underline">Cancún (3)</a></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div className="col-md-2 col-lg-3 order-md-0">
-                        <div className="container-tablet mx-5 ">
-                            <span style={{ fontSize: '.8em' }}>
-                                Destinos {'>'} Paquetes turisticos
-                            </span>
-                            <h2>Destinos</h2>
-                            <span className="lead">30 resultados</span>
 
-                            <div
-                                className="card my-2 border-0 card-destination"
-                                style={{
-                                    backgroundColor: '#F6F6F6',
-                                    boxShadow:
-                                        '2px 4px 4px -2px rgba(0,0,0,0.55)',
-                                }}
-                            >
-                                <div
-                                    className="row"
-                                    style={{ color: '#00AA96' }}
-                                >
-                                    <div className="start-0 mt-4 mx-2 px-4 row">
-                                        <span
-                                            className="my-2"
-                                            style={{
-                                                fontWeight: '600',
-                                                fontSize: '1.3em',
-                                            }}
-                                        >
-                                            Pasajes
-                                        </span>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            No incluye pasaje (30)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Incluye pasaje (20)
-                                        </a>
-                                    </div>
-
-                                    <div className="start-0 mx-2 px-4 mt-2 row">
-                                        <span
-                                            className="my-2"
-                                            style={{
-                                                fontWeight: '600',
-                                                fontSize: '1.3em',
-                                            }}
-                                        >
-                                            Otros destinos
-                                        </span>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Distrito capital (1)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Nayarit (2)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Oaxaca (3)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Mazatlán (5)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Cancun (3)
-                                        </a>
-                                    </div>
-
-                                    <div className="start-0 pb-4 mx-2 px-4 mt-2 row">
-                                        <span
-                                            className="my-2"
-                                            style={{
-                                                fontWeight: '600',
-                                                fontSize: '1.3em',
-                                            }}
-                                        >
-                                            Meses
-                                        </span>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Julio (12)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Agosto (8)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Septiembre (5)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Noviembre (4)
-                                        </a>
-                                        <a
-                                            href="#"
-                                            className="text-decoration-none my-1"
-                                            style={{
-                                                color: '#00AA96',
-                                                fontSize: '1em',
-                                            }}
-                                        >
-                                            Diciembre (3)
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        {/* Meses */}
+                        <div>
+                            <p className="font-semibold text-lg text-gray-900 mb-2">
+                                Meses
+                            </p>
+                            <ul className="space-y-1 text-emerald-600 text-sm">
+                                <li><a href="#" className="hover:underline">Julio (12)</a></li>
+                                <li><a href="#" className="hover:underline">Agosto (8)</a></li>
+                                <li><a href="#" className="hover:underline">Septiembre (5)</a></li>
+                                <li><a href="#" className="hover:underline">Noviembre (4)</a></li>
+                                <li><a href="#" className="hover:underline">Diciembre (3)</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div className="col-md-3 pt-5 mt-sm-5 order-md-2    align-items-center">
-                        <div className="text-start mx-3">
-                            <h3 className="title-landing-phone-product text-bold">
-                                ¿Buscas algo de última hora?
-                            </h3>
-                        </div>
+                </div>
 
-                        <div className="row justify-content-center gap-3">
-                            {' '}
-                            {products.map((product, i) => (
-                                <CardProduct key={i} product={product} />
-                            ))}
-                        </div>
+                {/* --- COLUMNA CENTRAL (Paquetes) --- */}
+                <div className="md:col-span-2">
+                    {/* Ordenar */}
+                    <div className="flex justify-end items-center gap-3 mb-6">
+                        <span className="text-sm text-gray-700">Ordenar por</span>
+                        <select className="border rounded-lg px-3 py-2 text-sm bg-white shadow-sm">
+                            <option value="1">Más relevante</option>
+                        </select>
+                    </div>
+
+                    {/* Lista de paquetes */}
+                    <div className="space-y-6">
+                        <PackageHotel />
+                        <PackageHotel />
+                        <PackageHotel />
+                        <PackageHotel />
+                        <PackageHotel />
+                        <PackageHotel />
+                        <PackageHotel />
+                    </div>
+
+                    <div className="flex justify-end mt-8">
+                        <a href="#" className="text-xl font-semibold text-emerald-600 hover:underline">
+                            Ver más
+                        </a>
+                    </div>
+                </div>
+
+                {/* --- COLUMNA DERECHA (Última hora) --- */}
+                <div className="md:col-span-1">
+                    <h3 className="text-xl font-bold mb-4">
+                        ¿Buscas algo de última hora?
+                    </h3>
+
+                    <div className="grid gap-5">
+                        {products.map((product, i) => (
+                            <CardProduct key={i} product={product} />
+                        ))}
                     </div>
                 </div>
             </div>
